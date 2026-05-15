@@ -227,7 +227,7 @@ const Home = () => {
             <p className="section-desc">End-to-end IT solutions crafted to accelerate your business growth and digital transformation journey.</p>
           </motion.div>
           <div className="services-grid">
-            {(services.length > 0 ? services : [
+            {(Array.isArray(services) && services.length > 0 ? services : [
               { title: 'Web Development', description: 'Custom web applications with modern frameworks.', icon: 'code', features: ['React', 'Node.js', 'Responsive', 'Scalable'] },
               { title: 'AI Solutions', description: 'Intelligent systems powered by machine learning.', icon: 'globe', features: ['GenAI', 'LLMs', 'Computer Vision', 'NLP'] },
               { title: 'Cloud Services', description: 'Scalable cloud infrastructure and migration.', icon: 'cloud', features: ['AWS', 'Azure', 'DevOps', 'Security'] },
@@ -248,10 +248,10 @@ const Home = () => {
               >
                 <div className="service-card-glow"></div>
                 <div className="service-icon">
-                  {serviceIcons[svc.icon] || serviceIcons.code}
+                  {serviceIcons[svc?.icon] || serviceIcons.code}
                 </div>
-                <h3>{svc.title}</h3>
-                <p>{svc.description}</p>
+                <h3>{svc?.title || 'Service'}</h3>
+                <p>{svc?.description || ''}</p>
                 <ul className="service-features">
                   {(svc.features || []).map((f, fi) => (
                     <li key={fi}><span className="feature-dot"></span>{f}</li>
