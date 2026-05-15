@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import axios from 'axios';
+import axios from '../api';;
 import './TechStack.css';
 
 const HARDCODED = {

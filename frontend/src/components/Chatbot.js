@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import axios from 'axios';
+import axios from '../api';
 import './Chatbot.css';
 
 const Chatbot = () => {
