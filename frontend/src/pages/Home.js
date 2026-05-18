@@ -5,10 +5,10 @@ import axios from '../api';
 import './Home.css';
 
 const stats = [
-  { value: '100+', label: 'Trusted Clients' },
-  { value: '500+', label: 'Projects Delivered' },
-  { value: '6', label: 'Global Offices' },
-  { value: '92.7%', label: 'Client Satisfaction' },
+  { value: '35+', label: 'Trusted Clients' },
+  { value: '60+', label: 'Projects Delivered' },
+  { value: '100+', label: 'Happy ARTians' },
+  { value: '91.7%', label: 'Client Satisfaction' },
 ];
 
 const serviceIcons = {
@@ -50,7 +50,7 @@ const serviceIcons = {
 const Home = () => {
   const [services, setServices] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  // const [activeTestimonial, setActiveTestimonial] = useState(0);
   const heroRef = useRef(null);
 
   useEffect(() => {
@@ -67,8 +67,8 @@ const Home = () => {
 
   useEffect(() => {
     if (!testimonials || testimonials.length === 0) return;
-    const t = setInterval(() => setActiveTestimonial(p => (p + 1) % testimonials.length), 5000);
-    return () => clearInterval(t);
+    // const t = setInterval(() => setActiveTestimonial(p => (p + 1) % testimonials.length), 5000);
+    // return () => clearInterval(t);
   }, [testimonials]);
 
   useEffect(() => {
@@ -203,7 +203,8 @@ const Home = () => {
                 <div className="vc-text">Secure & Scalable</div>
               </div>
               <div className="visual-hexagon">
-                <span>100+</span>
+                <span>35+</span>
+                <span></span>
                 <small>Clients</small>
               </div>
             </div>

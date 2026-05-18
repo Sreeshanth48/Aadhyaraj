@@ -181,7 +181,7 @@ const Contact = () => {
                     '✦ Dedicated project team from day one',
                     '✦ Transparent communication throughout',
                     '✦ Agile delivery with regular checkpoints',
-                    '✦ 92.7% client satisfaction rate',
+                    '✦ 91.7% client satisfaction rate',
                     '✦ Speed and Quality guaranteed',
                     '✦ Flexible engagement models',
                   ].map((p, i) => (

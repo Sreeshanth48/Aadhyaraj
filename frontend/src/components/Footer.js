@@ -66,7 +66,7 @@ const Footer = () => {
               {services.map((service, i) => (
                 <li key={i}>
                   <a href="/services">
-                    {service.title || service.name}
+                    {service.name || service.title || 'Service'}
                   </a>
                 </li>
               ))}

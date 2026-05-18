@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import axios from '../api';
 import './About.css';
@@ -11,12 +11,12 @@ const values = [
   { icon: '🤝', title: 'Partnership', desc: 'We are not vendors — we are long-term partners invested in your success.' },
 ];
 
-const team = [
-  { name: 'Rajesh Kumar', role: 'CEO & Founder', expertise: 'Business Strategy & Leadership' },
-  { name: 'Ananya Sharma', role: 'CTO', expertise: 'Cloud Architecture & Engineering' },
-  { name: 'Vikram Patel', role: 'Head of Delivery', expertise: 'Project Management & Agile' },
-  { name: 'Priya Nair', role: 'Head of Design', expertise: 'UI/UX & Product Design' },
-];
+// const team = [
+//   { name: 'Rajesh Kumar', role: 'CEO & Founder', expertise: 'Business Strategy & Leadership' },
+//   { name: 'Ananya Sharma', role: 'CTO', expertise: 'Cloud Architecture & Engineering' },
+//   { name: 'Vikram Patel', role: 'Head of Delivery', expertise: 'Project Management & Agile' },
+//   { name: 'Priya Nair', role: 'Head of Design', expertise: 'UI/UX & Product Design' },
+// ];
 
 const STATIC_TESTIMONIALS = [
   {
@@ -145,7 +145,7 @@ const About = () => {
 
   useEffect(() => {
     const animateCounters = () => {
-      const targetCounters = { clients: 100, projects: 500, offices: 6, satisfaction: 92.7 };
+      const targetCounters = { clients: 35, projects: 60, offices: 100, satisfaction: 91.7 };
       const duration = 2000;
       const steps = 60;
       const increment = duration / steps;
@@ -251,8 +251,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="stat-value">{counters.offices}</div>
-              <div className="stat-label">Global Offices</div>
+              <div className="stat-value">{counters.offices}+</div>
+              <div className="stat-label">Happy ARTians</div>
             </motion.div>
             <motion.div
               className="stat-card"
