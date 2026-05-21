@@ -105,27 +105,29 @@ const Contact = () => {
                 </div>
                 <div className="form-row">
                   <div className="form-group">
-                    <label>Phone Number</label>
+                    <label>Phone Number<span>*</span></label>
                     <input
                       type="tel"
                       name="phone"
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="+1 000 000 0000"
+                      required
                     />
                   </div>
                   <div className="form-group">
-                    <label>Service of Interest</label>
-                    <select name="service" value={form.service} onChange={handleChange}>
+                    <label>Service of Interest<span>*</span></label>
+                    <select name="service" value={form.service} onChange={handleChange}required>
                       <option value="">Select a service...</option>
-                      <option value="Custom Software Development">Custom Software Development</option>
-                      <option value="Enterprise Web Solutions">Enterprise Web Solutions</option>
-                      <option value="IT Consulting & Strategy">IT Consulting & Strategy</option>
-                      <option value="Cloud & DevOps">Cloud & DevOps Services</option>
-                      <option value="Maintenance & Support">Maintenance & Support</option>
-                      <option value="Training & Implementation">Training & Implementation</option>
+                      <option value="IT Consulting">IT Consulting</option>
+                      <option value="Global Capability Centres">Global Capability Centres</option>
+                      <option value="Web DevelopmentIT Consulting & Strategy">Web Development</option>
+                      <option value="Mobile Apps Development">Mobile Apps Development</option>
+                      <option value="Business Process Services">Business Process Services</option>
+                      <option value="Cloud Services & AI">Cloud Services & AI</option>
                       <option value="Other">Other</option>
                     </select>
+                    
                   </div>
                 </div>
                 <div className="form-group">
@@ -178,12 +180,12 @@ const Contact = () => {
                 <h3>Why Work With Us?</h3>
                 <ul className="info-points">
                   {[
-                    '✦ Dedicated project team from day one',
-                    '✦ Transparent communication throughout',
-                    '✦ Agile delivery with regular checkpoints',
-                    '✦ 91.7% client satisfaction rate',
+                    '✦ Dedicated Project Team from Day One',
+                    '✦ Transparent Communication',
+                    '✦ Agile Delivery with Regular Checkpoints',
+                    '✦ 91.7% Client Satisfaction rate',
                     '✦ Speed and Quality guaranteed',
-                    '✦ Flexible engagement models',
+                    '✦ Flexible Engagement Models',
                   ].map((p, i) => (
                     <li key={i}>{p}</li>
                   ))}
@@ -194,30 +196,27 @@ const Contact = () => {
                 <h3>Direct Contact</h3>
                 <div className="direct-contacts">
                   <div className="direct-item">
-                    <div className="direct-icon">📧</div>
-                    <div>
-                      <div className="direct-label">Email</div>
-                      <a href="mailto:info@aadhyarajtech.com">info@aadhyarajtech.com</a>
-                    </div>
+                    📧 Email :  
+                    <a href="mailto:info@aadhyarajtech.com">
+                      &nbsp;info@aadhyarajtech.com
+                    </a>
                   </div>
+
                   <div className="direct-item">
-                    <div className="direct-icon">📞</div>
-                    <div>
-                      <div className="direct-label">Phone (India)</div>
-                      <a href="tel:+919127912345">+91 91279 12345</a>
-                    </div>
+                    📞 Phone : 
+                    <a href="tel:+919127912345">
+                       &nbsp;+91 91279 12345
+                    </a>
                   </div>
+
                   <div className="direct-item">
-                    <div className="direct-icon">⏰</div>
-                    <div>
-                      <div className="direct-label">Response Time</div>
-                      <span>Within 24 business hours</span>
-                    </div>
+                    ⏰ Response Time : 
+                    <span> Within 24 business hours</span>
                   </div>
                 </div>
               </div>
 
-              <div className="info-block">
+              {/* <div className="info-block">
                 <h3>Follow Us</h3>
                 <div className="social-icons">
                   <a href="#" className="social-icon">📘</a>
@@ -225,9 +224,9 @@ const Contact = () => {
                   <a href="#" className="social-icon">💼</a>
                   <a href="#" className="social-icon">📷</a>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="info-block">
+              {/* <div className="info-block">
                 <h3>Global Offices</h3>
                 <div className="office-mini-list">
                   {offices.map((o, i) => (
@@ -235,12 +234,13 @@ const Contact = () => {
                       <span className="office-mini-flag">{o.flag}</span>
                       <div>
                         <div className="office-mini-country">{o.country}</div>
-                        {/* <a href={`mailto:${o.email}`} className="office-mini-email">{o.email}</a> */}
+                        <a href={`mailto:${o.email}`} className="office-mini-email">{o.email}</a>
                       </div>
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
+              
             </motion.div>
           </div>
         </div>

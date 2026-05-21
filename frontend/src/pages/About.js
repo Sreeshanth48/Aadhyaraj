@@ -437,7 +437,7 @@ const About = () => {
               <div className="gold-line"></div>
               <p>No matter where you are in the world, AadhyaRaj Technologies delivers the same commitment to quality, the same dedication to your success, with the added benefit of local support from our global delivery centres.</p>
             </div>
-            <div className="global-offices">
+            {/* <div className="global-offices">
               {[
                 { flag: '🇮🇳', country: 'India', city: 'Delivery Centre' },
                 { flag: '🇺🇸', country: 'United States', city: 'Delivery Centre' },
@@ -455,7 +455,7 @@ const About = () => {
                   {o.type === 'hq' && <span className="hq-badge">HQ</span>}
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

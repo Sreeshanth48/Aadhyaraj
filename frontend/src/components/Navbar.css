@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   right: 0;
-
+  height: 75px;
   z-index: 1000;
 
   padding: 1.2rem 0;
@@ -51,6 +51,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -63,8 +64,8 @@
 }
 
 .logo-icon {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -92,7 +93,7 @@
   font-family: var(--font-heading);
   font-size: 0.7rem;
   letter-spacing: 0.25em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--navy-mid);
   /* color:black; */
 }

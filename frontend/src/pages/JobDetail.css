@@ -354,13 +354,13 @@
 .jd-label select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #dbe3f1;
+  border: 1px solid #000;
   border-radius: 10px;
   font-size: 15px;
   background: #fff;
 }
 .jd-label select {
-  margin-top: -15px;;
+  margin-top: px;;
 }
 .jd-label span {
   color: var(--accent);

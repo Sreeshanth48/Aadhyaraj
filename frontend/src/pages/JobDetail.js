@@ -222,12 +222,13 @@ const JobDetail = () => {
 
               <div className="jd-form-row">
                 <label className="jd-label">
-                  Phone Number
+                  Phone Number<span>*</span>
                   <input
                     name="phone"
                     value={application.phone}
                     onChange={handleChange}
                     placeholder="+91 98765 43210"
+                    required
                   />
                 </label>
                   <label className="jd-label">

@@ -42,7 +42,9 @@ const Footer = () => {
               Delivering complete IT solutions with excellence, commitment and innovation. One of the most trusted technology partner across the globe.
             </p>
             <div className="footer-socials">
-              <a href="#" aria-label="LinkedIn" className="social-btn">in</a>
+              <a href="https://www.linkedin.com/company/aadhyaraj-technologies/"
+                  target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn" className="social-btn">in</a>
               <a href="#" aria-label="Twitter" className="social-btn">𝕏</a>
               <a href="#" aria-label="Facebook" className="social-btn">f</a>
               <a href="#" aria-label="Instagram" className="social-btn">ig</a>
