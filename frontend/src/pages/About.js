@@ -232,7 +232,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <div className="stat-value">{counters.clients}+</div>
-              <div className="stat-label">Trusted Clients</div>
+              <div className="stat-label">TRUSTED CLIENTS</div>
             </motion.div>
             <motion.div
               className="stat-card"
@@ -242,7 +242,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <div className="stat-value">{counters.projects}+</div>
-              <div className="stat-label">Projects Delivered</div>
+              <div className="stat-label">PROJECTS DELIVERED</div>
             </motion.div>
             <motion.div
               className="stat-card"
@@ -252,7 +252,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <div className="stat-value">{counters.offices}+</div>
-              <div className="stat-label">Happy ARTians</div>
+              <div className="stat-label">HAPPY ARTians</div>
             </motion.div>
             <motion.div
               className="stat-card"
@@ -262,7 +262,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <div className="stat-value">{counters.satisfaction}%</div>
-              <div className="stat-label">Client Satisfaction</div>
+              <div className="stat-label">CLIENT SATISFACTION</div>
             </motion.div>
           </div>
         </div>

@@ -5,10 +5,10 @@ import axios from '../api';
 import './Home.css';
 
 const stats = [
-  { value: '35+', label: 'Trusted Clients' },
-  { value: '60+', label: 'Projects Delivered' },
-  { value: '100+', label: 'Happy ARTians' },
-  { value: '91.7%', label: 'Client Satisfaction' },
+  { value: '35+', label: 'TRUSTED CLIENTS' },
+  { value: '60+', label: 'PROJECTS DELIVERED' },
+  { value: '100+', label: 'HAPPY ARTians' },
+  { value: '91.7%', label: 'CLIENT SATISFACTION' },
 ];
 
 const serviceIcons = {
