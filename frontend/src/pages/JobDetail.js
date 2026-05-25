@@ -139,7 +139,9 @@ const JobDetail = () => {
             {/* About the role */}
             {job.description && (
               <div className="jd-section">
-                <h2 className="jd-section-title">About the Role</h2>
+                <h2 className="jd-section-title">{job.title?.toLowerCase().includes('domain')
+    ? 'Join Our Team'
+    : 'About The Role'}</h2>
                 <p className="jd-text">{job.description}</p>
               </div>
             )}
@@ -147,7 +149,9 @@ const JobDetail = () => {
             {/* Responsibilities */}
             {job.responsibilities && job.responsibilities.length > 0 && (
               <div className="jd-section">
-                <h2 className="jd-section-title">Responsibilities</h2>
+                <h2 className="jd-section-title">{job.title?.toLowerCase().includes('domain')
+    ? 'Key Responsibilities'
+    : 'Responsibilities'}</h2>
                 <ul className="jd-list">
                   {job.responsibilities.map((item, i) => (
                     <li key={i}>{item}</li>
@@ -159,7 +163,9 @@ const JobDetail = () => {
             {/* Requirements */}
             {job.requirements && job.requirements.length > 0 && (
               <div className="jd-section">
-                <h2 className="jd-section-title">Requirements</h2>
+                <h2 className="jd-section-title">{job.title?.toLowerCase().includes('domain')
+    ? 'What We Are Looking For'
+    : 'Requirements'}</h2>
                 <ul className="jd-list">
                   {job.requirements.map((item, i) => (
                     <li key={i}>{item}</li>
@@ -167,7 +173,22 @@ const JobDetail = () => {
                 </ul>
               </div>
             )}
+            {job.title?.toLowerCase().includes('domain') && (
+              <div className="jd-section">
+                <h3>Why Us?</h3>
 
+                <ul>
+                  {/* <li>✨ Work on diverse real-world projects</li> */}
+                  <li>🚀 Career growth opportunities.</li>
+                  {/* <li>🌍 Opportunity to collaborate with global teams</li> */}
+                  <li>💡 Supportive and dynamic work environment.</li>
+                  <li>🤝 Exposure to exciting projects and learning opportunities.</li>
+                </ul>
+              </div>
+            )}
+            <p className="journey-text">
+              ✨ Apply now and become a part of our journey.
+            </p>
             {/* Skills */}
             {/* {job.skills && job.skills.length > 0 && (
               <div className="jd-section">
